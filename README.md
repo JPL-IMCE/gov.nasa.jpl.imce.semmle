@@ -14,14 +14,24 @@ where `<SEMMLE_DIST>` is the location of Semmle's distribution.
 
 Execute `odasa bootstrap` for each Scala project per the instructions.
 
-## 3) Manual analysis
+## 3) Running an analysis
 
 ```shell
 . setup.sh <SEMMLE_DIST>
 export ENCRYPTION_PASSWORD=<password>
 odasa addLatestSnapshot --project projects/<project name>
+(cd target/semmle/projects/<project name>/revision*/src; . ./scripts/travis-decode.sh)
 odasa buildSnapshot --project projects/<project name> --latest
 ```
+
+TODO: the travis-decode.sh script produces an error that needs to be fixed...
+
+```
+[ ${TRAVIS_SECURE_ENV_VARS} == false ] && exit -1;
+bash: [: ==: unary operator expected
+```
+
+TODO: check if we can run the script as a build step in the odasa project configuration instead.
 
 ## To see a particular dashboard:
 

@@ -5,7 +5,6 @@
     <checkout>git clone -n ${repository} ${src}</checkout>
     <checkout>git checkout ${revision}</checkout>
     <build unless="is_team_insight">odasa editSnapshot --concurrent --set-metadata revisionKey $(=git --git-dir=${src}/.git log -n1 --format=%h) ${snapshot}</build>
-    <build export="env.ENCRYPTION_PASSWORD">./scripts/travis-decode.sh</build>
     <build>odasa index --auto .</build>
     <build>sbt clean</build>
     <build index="true">sbt compile</build>
