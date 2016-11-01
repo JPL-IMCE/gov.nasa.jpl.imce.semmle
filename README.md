@@ -19,18 +19,8 @@ Execute `odasa bootstrap` for each Scala project per the instructions.
 ```shell
 . setup.sh <SEMMLE_DIST>
 export ENCRYPTION_PASSWORD=<password>
-odasa addLatestSnapshot --project projects/<project name>
-odasa buildSnapshot --project projects/<project name> --latest
-odasa buildDashboard dashboards/<project name>
-```
-
-or:
-
-```shell
-. setup.sh <SEMMLE_DIST>
-export ENCRYPTION_PASSWORD=<password>
-odasa addSnapshot --project projects/<project name> --default-build --default-date
-odasa buildDashboard dashboards/<project name>
+export $SEMMLE_CREDENTIALS=<user>:<password>
+./ci.sh <project name>
 ```
 
 ## To see a particular dashboard:
@@ -53,10 +43,12 @@ odasa serve --port <port> --dashboard dashboards/<project name>
 - [projects/org.omg.oti.uml.core](projects/org.omg.oti.uml.core) 
 - [projects/org.omg.oti.uml.change_migration](projects/org.omg.oti.uml.change_migration)
 - [projects/org.omg.uml.composite_structure_tree_analysis](projects/org.omg.uml.composite_structure_tree_analysis)
+- [projects/org.omg.uml.canonical_xmi.serialization](projects/org.omg.uml.canonical_xmi.serialization)
 
 - [projects/jpl.omf.schema.tables](projects/jpl.omf.schema.tables)
 - [projects/gov.nasa.jpl.omf.scala.core](projects/gov.nasa.jpl.omf.scala.core)
 - [projects/gov.nasa.jpl.omf.scala.binding.owlapi](projects/gov.nasa.jpl.omf.scala.binding.owlapi)
+- [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
 
 ## Analysis Dependencies (due to inter-project dependencies on Maven artifacts)
 
@@ -66,9 +58,13 @@ odasa serve --port <port> --dashboard dashboards/<project name>
   - [projects/org.omg.oti.uml.core](projects/org.omg.oti.uml.core)
     - [projects/org.omg.oti.uml.change_migration](projects/org.omg.oti.uml.change_migration)
     - [projects/org.omg.uml.composite_structure_tree_analysis](projects/org.omg.uml.composite_structure_tree_analysis)
+      - [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
+    - [projects/org.omg.uml.canonical_xmi.serialization](projects/org.omg.uml.canonical_xmi.serialization)
+      - [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
  
 - [projects/jpl.omf.schema.tables](projects/jpl.omf.schema.tables)
   - [projects/gov.nasa.jpl.omf.scala.core](projects/gov.nasa.jpl.omf.scala.core)
     - [projects/gov.nasa.jpl.omf.scala.binding.owlapi](projects/gov.nasa.jpl.omf.scala.binding.owlapi)
+    - [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
 
 

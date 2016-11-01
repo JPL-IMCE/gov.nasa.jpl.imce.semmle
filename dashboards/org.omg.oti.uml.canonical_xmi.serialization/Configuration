@@ -1,0 +1,9 @@
+#
+# Semmle Template Scala Dashboard
+#
+
+# The revisions to include, relative to SEMMLE_DATA
+${semmle_data}/projects/org.omg.oti.uml.canonical_xmi.serialization/revision*
+
+@import ${odasa_queries}/customer/default/scala
+
