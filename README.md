@@ -24,6 +24,14 @@ odasa buildSnapshot --project projects/<project name> --latest
 odasa buildDashboard dashboards/<project name>
 ```
 
+or:
+
+```shell
+. setup.sh <SEMMLE_DIST>
+export ENCRYPTION_PASSWORD=<password>
+odasa addSnapshot --project projects/<project name> --default-build --default-date
+odasa buildDashboard dashboards/<project name>
+```
 
 ## To see a particular dashboard:
 
@@ -43,6 +51,8 @@ odasa serve --port <port> --dashboard dashboards/<project name>
 - [projects/org.omg.oti.mof.schema](projects/org.omg.oti.mof.schema)
 - [projects/org.omg.oti.uml.json.schema](projects/org.omg.oti.uml.json.schema)
 - [projects/org.omg.oti.uml.core](projects/org.omg.oti.uml.core) 
+- [projects/org.omg.oti.uml.change_migration](projects/org.omg.oti.uml.change_migration)
+- [projects/org.omg.uml.composite_structure_tree_analysis](projects/org.omg.uml.composite_structure_tree_analysis)
 
 - [projects/jpl.omf.schema.tables](projects/jpl.omf.schema.tables)
 - [projects/gov.nasa.jpl.omf.scala.core](projects/gov.nasa.jpl.omf.scala.core)
@@ -54,6 +64,8 @@ odasa serve --port <port> --dashboard dashboards/<project name>
 
 - [projects/org.omg.oti.uml.json.schema](projects/org.omg.oti.uml.json.schema)
   - [projects/org.omg.oti.uml.core](projects/org.omg.oti.uml.core)
+    - [projects/org.omg.oti.uml.change_migration](projects/org.omg.oti.uml.change_migration)
+    - [projects/org.omg.uml.composite_structure_tree_analysis](projects/org.omg.uml.composite_structure_tree_analysis)
  
 - [projects/jpl.omf.schema.tables](projects/jpl.omf.schema.tables)
   - [projects/gov.nasa.jpl.omf.scala.core](projects/gov.nasa.jpl.omf.scala.core)
