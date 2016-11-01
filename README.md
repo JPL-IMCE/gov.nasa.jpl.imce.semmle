@@ -20,18 +20,10 @@ Execute `odasa bootstrap` for each Scala project per the instructions.
 . setup.sh <SEMMLE_DIST>
 export ENCRYPTION_PASSWORD=<password>
 odasa addLatestSnapshot --project projects/<project name>
-(cd target/semmle/projects/<project name>/revision*/src; . ./scripts/travis-decode.sh)
 odasa buildSnapshot --project projects/<project name> --latest
+odasa buildDashboard dashboards/<project name>
 ```
 
-TODO: the travis-decode.sh script produces an error that needs to be fixed...
-
-```
-[ ${TRAVIS_SECURE_ENV_VARS} == false ] && exit -1;
-bash: [: ==: unary operator expected
-```
-
-TODO: check if we can run the script as a build step in the odasa project configuration instead.
 
 ## To see a particular dashboard:
 

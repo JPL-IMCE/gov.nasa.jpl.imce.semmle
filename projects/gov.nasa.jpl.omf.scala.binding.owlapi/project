@@ -5,8 +5,7 @@
     <checkout>git clone -n ${repository} ${src}</checkout>
     <checkout>git checkout ${revision}</checkout>
     <build unless="is_team_insight">odasa editSnapshot --concurrent --set-metadata revisionKey $(=git --git-dir=${src}/.git log -n1 --format=%h) ${snapshot}</build>
-    <build>odasa index --auto .</build>
-    <build>sbt clean</build>
+    <build export="env.TRAVIS_SECURE_ENV_VARS,env.ENCRYPTION_PASSWORD">bash ${src}/scripts/travis-decode.sh</build>
     <build index="true">sbt compile</build>
     <build>odasa duplicateCode --ram 2048 --minimum-tokens 100</build>
     <days-between-updates>1</days-between-updates>
