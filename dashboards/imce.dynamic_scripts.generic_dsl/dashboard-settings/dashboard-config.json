@@ -1,0 +1,13 @@
+{
+	"satisfactory-limit": 7.5,
+	"good-limit" : 9.0,
+	"upper-limit" : 10.0,
+	"bad-score-delta-threshold" : -0.5,
+	"previous-defect-enabled" : true,
+	"violation-explorer-max-results" : 200,
+	"recent-change-max-results" : 200,
+	"tracker-link-enabled": true,
+	"dismiss-defect-enabled" : true,
+	"date-selector" : false,
+	"default-violation-metric" : "count"
+}
