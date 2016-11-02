@@ -36,7 +36,7 @@ Then execute:
 odasa serve --port <port> --dashboard dashboards/<project name>
 ```
 
-## 16 Analysis Projects & Dashboards
+## 20 Analysis Projects & Dashboards
 
 - [projects/org.omg.oti.mof.schema](projects/org.omg.oti.mof.schema)
 - [projects/org.omg.oti.uml.json.schema](projects/org.omg.oti.uml.json.schema)
@@ -51,15 +51,21 @@ odasa serve --port <port> --dashboard dashboards/<project name>
 - [projects/imce.dynamic_scripts.generic_dsl](projects/imce.dynamic_scripts.generic_dsl)
 - [projects/imce.magicdraw.library.enhanced_api](projects/imce.magicdraw.library.enhanced_api)
 - [projects/imce.dynamic_scripts.magicdraw.plugin](projects/imce.dynamic_scripts.magicdraw.plugin)
+- [projects/imce.oti.uml.magicdraw.dynamicscripts](projects/imce.oti.uml.magicdraw.dynamicscripts)
+- [projects/imce.oti.mof.magicdraw.dynamicscripts](projects/imce.oti.mof.magicdraw.dynamicscripts)
+- [projects/imce.magicdraw.dynamicscripts.batch](projects/imce.magicdraw.dynamicscripts.batch)
 
 - [projects/jpl.omf.schema.tables](projects/jpl.omf.schema.tables)
 - [projects/gov.nasa.jpl.omf.scala.core](projects/gov.nasa.jpl.omf.scala.core)
 - [projects/gov.nasa.jpl.omf.scala.binding.owlapi](projects/gov.nasa.jpl.omf.scala.binding.owlapi)
 - [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
+- [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)
 
 ## Analysis Dependencies (due to inter-project dependencies on Maven artifacts)
 
 - [projects/org.omg.oti.mof.schema](projects/org.omg.oti.mof.schema)
+  - [projects/imce.oti.mof.magicdraw.dynamicscripts](projects/imce.oti.mof.magicdraw.dynamicscripts)
+    - [projects/imce.magicdraw.dynamicscripts.batch](projects/imce.magicdraw.dynamicscripts.batch)
 
 - [projects/org.omg.oti.uml.json.schema](projects/org.omg.oti.uml.json.schema)
   - [projects/org.omg.oti.uml.json.serialization](projects/org.omg.oti.uml.json.serialization)
@@ -85,4 +91,15 @@ odasa serve --port <port> --dashboard dashboards/<project name>
     - [projects/gov.nasa.jpl.omf.scala.binding.owlapi](projects/gov.nasa.jpl.omf.scala.binding.owlapi)
     - [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
 
+- [projects/org.omg.uml.magicdraw.adapter](projects/org.omg.uml.magicdraw.adapter)
+  - [projects/imce.oti.uml.magicdraw.dynamicscripts](projects/imce.oti.uml.magicdraw.dynamicscripts)
+    - [projects/imce.oti.mof.magicdraw.dynamicscripts](projects/imce.oti.mof.magicdraw.dynamicscripts)
 
+- [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
+  - [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)
+  
+- [projects/imce.magicdraw.dynamicscripts.batch](projects/imce.magicdraw.dynamicscripts.batch)
+  - [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)
+  
+- [projects/gov.nasa.jpl.omf.scala.binding.owlapi](projects/gov.nasa.jpl.omf.scala.binding.owlapi)
+  - [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)
