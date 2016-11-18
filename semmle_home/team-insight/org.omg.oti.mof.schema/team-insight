@@ -1,0 +1,25 @@
+<team-insight>
+
+  <settings>
+    <flavor>light</flavor>
+    <http>
+    </http>
+  </settings>
+
+  <defaults>
+  </defaults>
+
+  <metadata>
+  </metadata>
+
+
+  <repository name="org.omg.oti.mof.schema" type="git">
+    <url>https://github.com/TIWG/org.omg.oti.mof.schema</url>
+    <languages>scala</languages>
+  </repository>
+
+  <project name="org.omg.oti.mof.schema_scala" repository="org.omg.oti.mof.schema" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/scala</query-configuration>
+  </project>
+
+</team-insight>

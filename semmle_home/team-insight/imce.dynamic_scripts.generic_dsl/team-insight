@@ -1,0 +1,25 @@
+<team-insight>
+
+  <settings>
+    <flavor>light</flavor>
+    <http>
+    </http>
+  </settings>
+
+  <defaults>
+  </defaults>
+
+  <metadata>
+  </metadata>
+
+
+  <repository name="imce.dynamic_scripts.generic_dsl" type="git">
+    <url>https://github.com/jpl-imce/imce.dynamic_scripts.generic_dsl</url>
+    <languages>scala</languages>
+  </repository>
+
+  <project name="imce.dynamic_scripts.generic_dsl_scala" repository="imce.dynamic_scripts.generic_dsl" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/scala</query-configuration>
+  </project>
+
+</team-insight>

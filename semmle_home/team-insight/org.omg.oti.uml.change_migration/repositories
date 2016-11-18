@@ -1,0 +1,12 @@
+<team-insight>
+
+    <settings>
+        <flavor>light</flavor>
+    </settings>
+
+    <repository name="org.omg.oti.uml.change_migration" type="git">
+        <url>https://github.com/tiwg/org.omg.oti.uml.change_migration</url>
+        <languages>scala</languages>
+    </repository>
+
+</team-insight>

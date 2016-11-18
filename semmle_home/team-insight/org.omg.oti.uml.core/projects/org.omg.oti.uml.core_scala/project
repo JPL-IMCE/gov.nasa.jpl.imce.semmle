@@ -1,0 +1,15 @@
+<project language="scala">
+  <ram>2048</ram>
+  <timeout>600</timeout>
+  <repositories>
+    <repository name="org.omg.oti.uml.core" type="git">
+      <command>git</command>
+    </repository>
+  </repositories>
+  <autoupdate>
+    <checkout repositoryName="org.omg.oti.uml.core" revision="${revision}"></checkout>
+    <build>odasa lightExtractor</build>
+    <build>odasa duplicateCode --ram 2048 --minimum-tokens 100</build>
+    <source-location>${semmle_cache}/checkouts/${project_name}</source-location>
+  </autoupdate>
+</project>

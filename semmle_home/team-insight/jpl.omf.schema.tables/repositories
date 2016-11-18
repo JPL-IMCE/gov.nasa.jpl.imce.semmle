@@ -1,0 +1,12 @@
+<team-insight>
+
+    <settings>
+        <flavor>light</flavor>
+    </settings>
+
+    <repository name="jpl.omf.schema.tables" type="git">
+        <url>https://github.com/JPL-IMCE/jpl.omf.schema.tables</url>
+        <languages>scala,java,javascript</languages>
+    </repository>
+
+</team-insight>

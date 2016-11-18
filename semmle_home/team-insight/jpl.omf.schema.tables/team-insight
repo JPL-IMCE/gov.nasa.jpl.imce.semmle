@@ -1,0 +1,33 @@
+<team-insight>
+
+  <settings>
+    <flavor>light</flavor>
+    <http>
+    </http>
+  </settings>
+
+  <defaults>
+  </defaults>
+
+  <metadata>
+  </metadata>
+
+
+  <repository name="jpl.omf.schema.tables" type="git">
+    <url>https://github.com/JPL-IMCE/jpl.omf.schema.tables</url>
+    <languages>scala,java,javascript</languages>
+  </repository>
+
+  <project name="jpl.omf.schema.tables_scala" repository="jpl.omf.schema.tables" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/scala</query-configuration>
+  </project>
+
+  <project name="jpl.omf.schema.tables_java" repository="jpl.omf.schema.tables" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/java</query-configuration>
+  </project>
+
+  <project name="jpl.omf.schema.tables_javascript" repository="jpl.omf.schema.tables" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/javascript</query-configuration>
+  </project>
+
+</team-insight>

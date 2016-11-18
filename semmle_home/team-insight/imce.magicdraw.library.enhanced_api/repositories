@@ -1,0 +1,12 @@
+<team-insight>
+
+    <settings>
+        <flavor>light</flavor>
+    </settings>
+
+    <repository name="imce.magicdraw.library.enhanced_api" type="git">
+        <url>https://github.com/jpl-imce/imce.magicdraw.library.enhanced_api</url>
+        <languages>scala</languages>
+    </repository>
+
+</team-insight>

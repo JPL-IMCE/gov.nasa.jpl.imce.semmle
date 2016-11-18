@@ -1,9 +1,0 @@
-#
-# Semmle Template Scala Dashboard
-#
-
-# The revisions to include, relative to SEMMLE_DATA
-${semmle_data}/projects/imce.magicdraw.dynamicscripts.batch/revision*
-
-@import ${odasa_queries}/customer/default/scala
-

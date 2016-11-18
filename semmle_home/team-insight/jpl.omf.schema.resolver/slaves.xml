@@ -1,0 +1,5 @@
+<slaves>
+    <local>
+        <host tag="local" threads="1" remoteRoot="${semmle_data}/workers">localhost</host>
+    </local>
+</slaves>

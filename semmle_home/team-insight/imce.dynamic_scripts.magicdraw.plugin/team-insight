@@ -1,0 +1,25 @@
+<team-insight>
+
+  <settings>
+    <flavor>light</flavor>
+    <http>
+    </http>
+  </settings>
+
+  <defaults>
+  </defaults>
+
+  <metadata>
+  </metadata>
+
+
+  <repository name="imce.dynamic_scripts.magicdraw.plugin" type="git">
+    <url>https://github.com/JPL-IMCE/imce.dynamic_scripts.magicdraw.plugin</url>
+    <languages>scala</languages>
+  </repository>
+
+  <project name="imce.dynamic_scripts.magicdraw.plugin_scala" repository="imce.dynamic_scripts.magicdraw.plugin" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/scala</query-configuration>
+  </project>
+
+</team-insight>

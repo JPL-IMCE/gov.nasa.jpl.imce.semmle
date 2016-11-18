@@ -1,0 +1,25 @@
+<team-insight>
+
+  <settings>
+    <flavor>light</flavor>
+    <http>
+    </http>
+  </settings>
+
+  <defaults>
+  </defaults>
+
+  <metadata>
+  </metadata>
+
+
+  <repository name="gov.nasa.jpl.omf.scala.binding.owlapi" type="git">
+    <url>https://github.com/JPL-IMCE/gov.nasa.jpl.omf.scala.binding.owlapi</url>
+    <languages>scala</languages>
+  </repository>
+
+  <project name="gov.nasa.jpl.omf.scala.binding.owlapi_scala" repository="gov.nasa.jpl.omf.scala.binding.owlapi" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/scala</query-configuration>
+  </project>
+
+</team-insight>

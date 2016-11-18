@@ -1,0 +1,12 @@
+<team-insight>
+
+    <settings>
+        <flavor>light</flavor>
+    </settings>
+
+    <repository name="imce.oti.mof.magicdraw.dyanmicscripts" type="git">
+        <url>https://github.com/TIWG/imce.oti.mof.magicdraw.dynamicscripts</url>
+        <languages>scala</languages>
+    </repository>
+
+</team-insight>

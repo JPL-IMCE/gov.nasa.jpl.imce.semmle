@@ -23,6 +23,9 @@ export $SEMMLE_CREDENTIALS=<user>:<password>
 ./ci.sh <project name>
 ```
 
+## 4) []Team Insight](https://help.semmle.com/til/1.10/Content/WebHelp/home.html)
+
+
 ## To see a particular dashboard:
 
 Assuming that `<project name>` has been configured using `odasa bootstrap`, resulting in:
@@ -38,70 +41,72 @@ odasa serve --port <port> --dashboard dashboards/<project name>
 
 ## 21 Analysis Projects & Dashboards
 
-- [projects/org.omg.oti.mof.schema](projects/org.omg.oti.mof.schema)
-- [projects/org.omg.oti.uml.json.schema](projects/org.omg.oti.uml.json.schema)
-- [projects/org.omg.oti.uml.json.serialization](projects/org.omg.oti.uml.json.serialization)
-- [projects/org.omg.oti.uml.core](projects/org.omg.oti.uml.core) 
-- [projects/org.omg.oti.uml.change_migration](projects/org.omg.oti.uml.change_migration)
-- [projects/org.omg.uml.composite_structure_tree_analysis](projects/org.omg.uml.composite_structure_tree_analysis)
-- [projects/org.omg.uml.canonical_xmi.serialization](projects/org.omg.uml.canonical_xmi.serialization)
-- [projects/org.omg.uml.canonical_xmi.loader](projects/org.omg.uml.canonical_xmi.loader)
-- [projects/org.omg.uml.magicdraw.adapter](projects/org.omg.uml.magicdraw.adapter)
+- [projects/org.omg.oti.mof.schema](semmle_home/projects/org.omg.oti.mof.schema)
+- [projects/org.omg.oti.uml.json.schema](semmle_home/projects/org.omg.oti.uml.json.schema)
+- [projects/org.omg.oti.uml.json.serialization](semmle_home/projects/org.omg.oti.uml.json.serialization)
+- [projects/org.omg.oti.uml.core](semmle_home/projects/org.omg.oti.uml.core) 
+- [projects/org.omg.oti.uml.change_migration](semmle_home/projects/org.omg.oti.uml.change_migration)
+- [projects/org.omg.uml.composite_structure_tree_analysis](semmle_home/projects/org.omg.uml.composite_structure_tree_analysis)
+- [projects/org.omg.uml.canonical_xmi.serialization](semmle_home/projects/org.omg.uml.canonical_xmi.serialization)
+- [projects/org.omg.uml.canonical_xmi.loader](semmle_home/projects/org.omg.uml.canonical_xmi.loader)
+- [projects/org.omg.uml.magicdraw.adapter](semmle_home/projects/org.omg.uml.magicdraw.adapter)
 
-- [projects/imce.dynamic_scripts.generic_dsl](projects/imce.dynamic_scripts.generic_dsl)
-- [projects/imce.magicdraw.library.enhanced_api](projects/imce.magicdraw.library.enhanced_api)
-- [projects/imce.dynamic_scripts.magicdraw.plugin](projects/imce.dynamic_scripts.magicdraw.plugin)
-- [projects/imce.oti.uml.magicdraw.dynamicscripts](projects/imce.oti.uml.magicdraw.dynamicscripts)
-- [projects/imce.oti.mof.magicdraw.dynamicscripts](projects/imce.oti.mof.magicdraw.dynamicscripts)
-- [projects/imce.magicdraw.dynamicscripts.batch](projects/imce.magicdraw.dynamicscripts.batch)
+- [projects/imce.dynamic_scripts.generic_dsl](semmle_home/projects/imce.dynamic_scripts.generic_dsl)
+- [projects/imce.magicdraw.library.enhanced_api](semmle_home/projects/imce.magicdraw.library.enhanced_api)
+- [projects/imce.dynamic_scripts.magicdraw.plugin](semmle_home/projects/imce.dynamic_scripts.magicdraw.plugin)
+- [projects/imce.oti.uml.magicdraw.dynamicscripts](semmle_home/projects/imce.oti.uml.magicdraw.dynamicscripts)
+- [projects/imce.oti.mof.magicdraw.dynamicscripts](semmle_home/projects/imce.oti.mof.magicdraw.dynamicscripts)
+- [projects/imce.magicdraw.dynamicscripts.batch](semmle_home/projects/imce.magicdraw.dynamicscripts.batch)
 
-- [projects/jpl.omf.schema.tables](projects/jpl.omf.schema.tables)
-- [projects/jpl.omf.schema.resolver](projects/jpl.omf.schema.resolver)
-- [projects/gov.nasa.jpl.omf.scala.core](projects/gov.nasa.jpl.omf.scala.core)
-- [projects/gov.nasa.jpl.omf.scala.binding.owlapi](projects/gov.nasa.jpl.omf.scala.binding.owlapi)
-- [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
-- [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)
+- [projects/jpl.omf.schema.tables](semmle_home/projects/jpl.omf.schema.tables)
+- [projects/jpl.omf.schema.resolver](semmle_home/projects/jpl.omf.schema.resolver)
+- [projects/gov.nasa.jpl.omf.scala.core](semmle_home/projects/gov.nasa.jpl.omf.scala.core)
+- [projects/gov.nasa.jpl.omf.scala.binding.owlapi](semmle_home/projects/gov.nasa.jpl.omf.scala.binding.owlapi)
+- [projects/gov.nasa.jpl.omf.scala.mapping.oti](semmle_home/projects/gov.nasa.jpl.omf.scala.mapping.oti)
+- [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](semmle_home/projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)
 
 ## Analysis Dependencies (due to inter-project dependencies on Maven artifacts)
 
-- [projects/org.omg.oti.mof.schema](projects/org.omg.oti.mof.schema)
-  - [projects/imce.oti.mof.magicdraw.dynamicscripts](projects/imce.oti.mof.magicdraw.dynamicscripts)
-    - [projects/imce.magicdraw.dynamicscripts.batch](projects/imce.magicdraw.dynamicscripts.batch)
+- [projects/org.omg.oti.mof.schema](semmle_home/projects/org.omg.oti.mof.schema)
+  - [projects/imce.oti.mof.magicdraw.dynamicscripts](semmle_home/projects/imce.oti.mof.magicdraw.dynamicscripts)
+    - [projects/imce.magicdraw.dynamicscripts.batch](semmle_home/projects/imce.magicdraw.dynamicscripts.batch)
 
-- [projects/org.omg.oti.uml.json.schema](projects/org.omg.oti.uml.json.schema)
-  - [projects/org.omg.oti.uml.json.serialization](projects/org.omg.oti.uml.json.serialization)
-    - [projects/org.omg.uml.magicdraw.adapter](projects/org.omg.uml.magicdraw.adapter)
-  - [projects/org.omg.oti.uml.core](projects/org.omg.oti.uml.core)
-    - [projects/org.omg.oti.uml.change_migration](projects/org.omg.oti.uml.change_migration)
-    - [projects/org.omg.uml.composite_structure_tree_analysis](projects/org.omg.uml.composite_structure_tree_analysis)
-      - [projects/org.omg.uml.magicdraw.adapter](projects/org.omg.uml.magicdraw.adapter)
-      - [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
-    - [projects/org.omg.uml.canonical_xmi.serialization](projects/org.omg.uml.canonical_xmi.serialization)
-      - [projects/org.omg.uml.canonical_xmi.loader](projects/org.omg.uml.canonical_xmi.loader)
-        - [projects/org.omg.uml.magicdraw.adapter](projects/org.omg.uml.magicdraw.adapter)
-      - [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
+- [projects/org.omg.oti.uml.json.schema](semmle_home/projects/org.omg.oti.uml.json.schema)
+  - [projects/org.omg.oti.uml.json.serialization](semmle_home/projects/org.omg.oti.uml.json.serialization)
+    - [projects/org.omg.uml.magicdraw.adapter](semmle_home/projects/org.omg.uml.magicdraw.adapter)
+  - [projects/org.omg.oti.uml.core](semmle_home/projects/org.omg.oti.uml.core)
+    - [projects/org.omg.oti.uml.change_migration](semmle_home/projects/org.omg.oti.uml.change_migration)
+    - [projects/org.omg.uml.composite_structure_tree_analysis](semmle_home/projects/org.omg.uml.composite_structure_tree_analysis)
+      - [projects/org.omg.uml.magicdraw.adapter](semmle_home/projects/org.omg.uml.magicdraw.adapter)
+      - [projects/gov.nasa.jpl.omf.scala.mapping.oti](semmle_home/projects/gov.nasa.jpl.omf.scala.mapping.oti)
+    - [projects/org.omg.uml.canonical_xmi.serialization](semmle_home/projects/org.omg.uml.canonical_xmi.serialization)
+      - [projects/org.omg.uml.canonical_xmi.loader](semmle_home/projects/org.omg.uml.canonical_xmi.loader)
+        - [projects/org.omg.uml.magicdraw.adapter](semmle_home/projects/org.omg.uml.magicdraw.adapter)
+      - [projects/gov.nasa.jpl.omf.scala.mapping.oti](semmle_home/projects/gov.nasa.jpl.omf.scala.mapping.oti)
  
-- [projects/imce.dynamic_scripts.generic_dsl](projects/imce.dynamic_scripts.generic_dsl)
-  - [projects/imce.dynamic_scripts.magicdraw.plugin](projects/imce.dynamic_scripts.magicdraw.plugin)
-- [projects/imce.magicdraw.library.enhanced_api](projects/imce.magicdraw.library.enhanced_api)
-  - [projects/imce.dynamic_scripts.magicdraw.plugin](projects/imce.dynamic_scripts.magicdraw.plugin)
-    - [projects/org.omg.uml.magicdraw.adapter](projects/org.omg.uml.magicdraw.adapter)
-
-- [projects/jpl.omf.schema.tables](projects/jpl.omf.schema.tables)
-  - [projects/jpl.omf.schema.resolver](projects/jpl.omf.schema.resolver)
-  - [projects/gov.nasa.jpl.omf.scala.core](projects/gov.nasa.jpl.omf.scala.core)
-    - [projects/gov.nasa.jpl.omf.scala.binding.owlapi](projects/gov.nasa.jpl.omf.scala.binding.owlapi)
-    - [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
-
-- [projects/org.omg.uml.magicdraw.adapter](projects/org.omg.uml.magicdraw.adapter)
-  - [projects/imce.oti.uml.magicdraw.dynamicscripts](projects/imce.oti.uml.magicdraw.dynamicscripts)
-    - [projects/imce.oti.mof.magicdraw.dynamicscripts](projects/imce.oti.mof.magicdraw.dynamicscripts)
-
-- [projects/gov.nasa.jpl.omf.scala.mapping.oti](projects/gov.nasa.jpl.omf.scala.mapping.oti)
-  - [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)
+- [projects/imce.dynamic_scripts.generic_dsl](semmle_home/projects/imce.dynamic_scripts.generic_dsl)
+  - [projects/imce.dynamic_scripts.magicdraw.plugin](semmle_home/projects/imce.dynamic_scripts.magicdraw.plugin)
   
-- [projects/imce.magicdraw.dynamicscripts.batch](projects/imce.magicdraw.dynamicscripts.batch)
-  - [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)
+- [projects/imce.magicdraw.library.enhanced_api](semmle_home/projects/imce.magicdraw.library.enhanced_api)
+  - [projects/imce.dynamic_scripts.magicdraw.plugin](semmle_home/projects/imce.dynamic_scripts.magicdraw.plugin)
+    - [projects/org.omg.uml.magicdraw.adapter](semmle_home/projects/org.omg.uml.magicdraw.adapter)
+
+- [projects/jpl.omf.schema.tables](semmle_home/projects/jpl.omf.schema.tables)
+  - [projects/jpl.omf.schema.resolver](semmle_home/projects/jpl.omf.schema.resolver)
+  - [projects/gov.nasa.jpl.omf.scala.core](semmle_home/projects/gov.nasa.jpl.omf.scala.core)
+    - [projects/gov.nasa.jpl.omf.scala.binding.owlapi](semmle_home/projects/gov.nasa.jpl.omf.scala.binding.owlapi)
+    - [projects/gov.nasa.jpl.omf.scala.mapping.oti](semmle_home/projects/gov.nasa.jpl.omf.scala.mapping.oti)
+
+- [projects/org.omg.uml.magicdraw.adapter](semmle_home/projects/org.omg.uml.magicdraw.adapter)
+  - [projects/imce.oti.uml.magicdraw.dynamicscripts](semmle_home/projects/imce.oti.uml.magicdraw.dynamicscripts)
+    - [projects/imce.oti.mof.magicdraw.dynamicscripts](semmle_home/projects/imce.oti.mof.magicdraw.dynamicscripts)
+      - [projects/imce.magicdraw.dynamicscripts.batch](semmle_home/projects/imce.magicdraw.dynamicscripts.batch)
+
+- [projects/gov.nasa.jpl.omf.scala.mapping.oti](semmle_home/projects/gov.nasa.jpl.omf.scala.mapping.oti)
+  - [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](semmle_home/projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)
   
-- [projects/gov.nasa.jpl.omf.scala.binding.owlapi](projects/gov.nasa.jpl.omf.scala.binding.owlapi)
-  - [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)
+- [projects/imce.magicdraw.dynamicscripts.batch](semmle_home/projects/imce.magicdraw.dynamicscripts.batch)
+  - [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](semmle_home/projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)
+  
+- [projects/gov.nasa.jpl.omf.scala.binding.owlapi](semmle_home/projects/gov.nasa.jpl.omf.scala.binding.owlapi)
+  - [projects/gov.nasa.jpl.omf.scala.magicdraw.exporter](semmle_home/projects/gov.nasa.jpl.omf.scala.magicdraw.exporter)

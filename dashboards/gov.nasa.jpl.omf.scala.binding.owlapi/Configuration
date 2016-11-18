@@ -1,9 +1,0 @@
-#
-# Semmle Template Scala Dashboard
-#
-
-# The revisions to include, relative to SEMMLE_DATA
-${semmle_data}/projects/gov.nasa.jpl.omf.scala.binding.owlapi/revision*
-
-@import ${odasa_queries}/customer/default/scala
-

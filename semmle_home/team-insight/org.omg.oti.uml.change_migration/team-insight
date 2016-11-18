@@ -1,0 +1,25 @@
+<team-insight>
+
+  <settings>
+    <flavor>light</flavor>
+    <http>
+    </http>
+  </settings>
+
+  <defaults>
+  </defaults>
+
+  <metadata>
+  </metadata>
+
+
+  <repository name="org.omg.oti.uml.change_migration" type="git">
+    <url>https://github.com/tiwg/org.omg.oti.uml.change_migration</url>
+    <languages>scala</languages>
+  </repository>
+
+  <project name="org.omg.oti.uml.change_migration_scala" repository="org.omg.oti.uml.change_migration" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/scala</query-configuration>
+  </project>
+
+</team-insight>

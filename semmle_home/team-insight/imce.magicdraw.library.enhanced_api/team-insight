@@ -1,0 +1,25 @@
+<team-insight>
+
+  <settings>
+    <flavor>light</flavor>
+    <http>
+    </http>
+  </settings>
+
+  <defaults>
+  </defaults>
+
+  <metadata>
+  </metadata>
+
+
+  <repository name="imce.magicdraw.library.enhanced_api" type="git">
+    <url>https://github.com/jpl-imce/imce.magicdraw.library.enhanced_api</url>
+    <languages>scala</languages>
+  </repository>
+
+  <project name="imce.magicdraw.library.enhanced_api_scala" repository="imce.magicdraw.library.enhanced_api" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/scala</query-configuration>
+  </project>
+
+</team-insight>

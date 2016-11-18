@@ -1,0 +1,12 @@
+<team-insight>
+
+    <settings>
+        <flavor>light</flavor>
+    </settings>
+
+    <repository name="org.omg.oti.uml.magicdraw.adapter" type="git">
+        <url>https://github.com/TIWG/org.omg.oti.uml.magicdraw.adapter</url>
+        <languages>scala</languages>
+    </repository>
+
+</team-insight>

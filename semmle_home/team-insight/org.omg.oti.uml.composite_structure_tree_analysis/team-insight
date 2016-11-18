@@ -1,0 +1,25 @@
+<team-insight>
+
+  <settings>
+    <flavor>light</flavor>
+    <http>
+    </http>
+  </settings>
+
+  <defaults>
+  </defaults>
+
+  <metadata>
+  </metadata>
+
+
+  <repository name="org.omg.oti.uml.composite_structure_tree_analysis" type="git">
+    <url>https://github.com/tiwg/org.omg.oti.uml.composite_structure_tree_analysis</url>
+    <languages>scala</languages>
+  </repository>
+
+  <project name="org.omg.oti.uml.composite_structure_tree_analysis_scala" repository="org.omg.oti.uml.composite_structure_tree_analysis" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/scala</query-configuration>
+  </project>
+
+</team-insight>

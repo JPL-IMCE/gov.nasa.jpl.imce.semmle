@@ -1,0 +1,12 @@
+<team-insight>
+
+    <settings>
+        <flavor>light</flavor>
+    </settings>
+
+    <repository name="gov.nasa.jpl.omf.scala.mapping.oti" type="git">
+        <url>https://github.com/jpl-imce/gov.nasa.jpl.omf.scala.mapping.oti</url>
+        <languages>scala</languages>
+    </repository>
+
+</team-insight>

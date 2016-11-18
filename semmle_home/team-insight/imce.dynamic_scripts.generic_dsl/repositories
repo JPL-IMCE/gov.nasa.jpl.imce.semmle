@@ -1,0 +1,12 @@
+<team-insight>
+
+    <settings>
+        <flavor>light</flavor>
+    </settings>
+
+    <repository name="imce.dynamic_scripts.generic_dsl" type="git">
+        <url>https://github.com/jpl-imce/imce.dynamic_scripts.generic_dsl</url>
+        <languages>scala</languages>
+    </repository>
+
+</team-insight>

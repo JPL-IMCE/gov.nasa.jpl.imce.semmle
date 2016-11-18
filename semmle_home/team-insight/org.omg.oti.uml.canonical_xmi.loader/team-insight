@@ -1,0 +1,25 @@
+<team-insight>
+
+  <settings>
+    <flavor>light</flavor>
+    <http>
+    </http>
+  </settings>
+
+  <defaults>
+  </defaults>
+
+  <metadata>
+  </metadata>
+
+
+  <repository name="org.omg.oti.uml.canonical_xmi.loader" type="git">
+    <url>https://github.com/tiwg/org.omg.oti.uml.canonical_xmi.loader</url>
+    <languages>scala</languages>
+  </repository>
+
+  <project name="org.omg.oti.uml.canonical_xmi.loader_scala" repository="org.omg.oti.uml.canonical_xmi.loader" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/scala</query-configuration>
+  </project>
+
+</team-insight>

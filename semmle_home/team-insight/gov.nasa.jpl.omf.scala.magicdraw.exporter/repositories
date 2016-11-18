@@ -1,0 +1,12 @@
+<team-insight>
+
+    <settings>
+        <flavor>light</flavor>
+    </settings>
+
+    <repository name="gov.nasa.jpl.omf.scala.magicdraw.exporter" type="git">
+        <url>git@github.jpl.nasa.gov:imce/gov.nasa.jpl.omf.scala.magicdraw.exporter.git</url>
+        <languages>scala</languages>
+    </repository>
+
+</team-insight>

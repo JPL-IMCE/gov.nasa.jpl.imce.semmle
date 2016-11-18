@@ -1,0 +1,25 @@
+<team-insight>
+
+  <settings>
+    <flavor>light</flavor>
+    <http>
+    </http>
+  </settings>
+
+  <defaults>
+  </defaults>
+
+  <metadata>
+  </metadata>
+
+
+  <repository name="jpl.omf.schema.resolver" type="git">
+    <url>https://github.com/JPL-IMCE/jpl.omf.schema.resolver</url>
+    <languages>scala</languages>
+  </repository>
+
+  <project name="jpl.omf.schema.resolver_scala" repository="jpl.omf.schema.resolver" path="${attribdir}/projects/${project_name}">
+    <query-configuration>${semmle_dist}/queries/customer/light/scala</query-configuration>
+  </project>
+
+</team-insight>

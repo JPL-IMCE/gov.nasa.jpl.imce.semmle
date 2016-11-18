@@ -1,0 +1,12 @@
+<team-insight>
+
+    <settings>
+        <flavor>light</flavor>
+    </settings>
+
+    <repository name="org.omg.oti.uml.json.serialization" type="git">
+        <url>https://github.com/tiwg/org.omg.oti.uml.json.serialization</url>
+        <languages>scala</languages>
+    </repository>
+
+</team-insight>
